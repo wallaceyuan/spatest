@@ -29,6 +29,7 @@ var demoNewPage = {
   view: function() {
     var $page = this
     requirejs(['demo.newpage'], function(viewData) {
+      console.log(viewData);
       $doc.trigger('spa:initpage', [$page, viewData])
     })
   }
